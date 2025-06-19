@@ -139,7 +139,7 @@ with st.container():
     try:
         image_path = Path(__file__).parent / "images" / "disney_dashboard.png"
         image = Image.open(image_path)
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
     except FileNotFoundError:
         st.info("To add a banner, place an image named `disney_dashboard.png` in the `src/images` directory.")
 
